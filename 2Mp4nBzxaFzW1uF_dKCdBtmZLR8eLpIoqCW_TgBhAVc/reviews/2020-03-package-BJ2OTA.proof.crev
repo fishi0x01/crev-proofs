@@ -29,3 +29,35 @@ comment: |-
 FzDGik4zu4R9M81_jJQ7v7hT_7NtYYTpACNab_56ohBG_6RXUtHkkHbYS5IcRT9DOrolnVZ3ZYRqnYJdfNDjAw
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-03-13T10:18:14.484599392+01:00"
+from:
+  id-type: crev
+  id: 2Mp4nBzxaFzW1uF_dKCdBtmZLR8eLpIoqCW_TgBhAVc
+  url: "https://github.com/fishi0x01/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: libdb
+  version: 0.1.1
+  revision: d8ad83575c760aea21e106cd3632aba4281e9ba4
+  digest: bk1QjU0LGFbVK4JlEFSowii-VKlH4ywJ10KY-qiNou4
+review:
+  thoroughness: medium
+  understanding: medium
+  rating: positive
+comment: |-
+  I am the maintainer of libdb. libdb is an idiomatic rust wrapper for Berkeley DB. 
+  It uses unsafe ffi methods from libdb-sys.
+  
+  The underlying code was forked from Jesse Morgan, who allowed me to modify it and publish it to crates.io. 
+  I do not fully understand every aspect of Jesse Morgan's original code and I mainly added new features. 
+  That is why I can only rate this with a medium understanding value.
+  
+  As this crate is an idiomatic wrapper by design it contains a lot of unsafe calls to external ffi methods. 
+  However, as I also maintain and trust libdb-sys, I can give this crate an overall positive rating.  
+----- SIGN CREV PROOF -----
+cvF1IFDv6dozPJRPe4n4AnDEUHMu2OoOcHlM03eHt8aoGfyq6Qvf2VXC6CWH4Y8QOQzxJW7swGvZzCiu09JiAg
+----- END CREV PROOF -----
+
