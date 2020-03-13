@@ -1,0 +1,31 @@
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-03-13T10:14:21.805281778+01:00"
+from:
+  id-type: crev
+  id: 2Mp4nBzxaFzW1uF_dKCdBtmZLR8eLpIoqCW_TgBhAVc
+  url: "https://github.com/fishi0x01/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: libdb-sys
+  version: 0.1.1
+  revision: 244275ab46f0d76fd7c60efbc0385bfc4d534372
+  digest: t5Heq2Q5blZLyIvlW0b11kjji4KnOZECU-R2ErWWw3g
+review:
+  thoroughness: none
+  understanding: none
+  rating: positive
+comment: |-
+  I am the maintainer of libdb-sys. This crate is a classic ffi wrapper around Berkeley DB. 
+  This means, that by design this code contains a lot of unsafe external ffi calls. 
+  This crate uses static linking, i.e., the Berkeley DB code is included and build together with this crate.
+  
+  I did not review nor understand the underlying Berkeley DB code itself, which is why I cannot give this review 
+  a satisfyable `thoroughness` or `understanding` value.
+  However, the Berkeley DB code was retrieved from official sources (Oracle and official libdb repos from rpm). 
+  This is why I trust this crate and give it an overall positive rating.
+----- SIGN CREV PROOF -----
+FzDGik4zu4R9M81_jJQ7v7hT_7NtYYTpACNab_56ohBG_6RXUtHkkHbYS5IcRT9DOrolnVZ3ZYRqnYJdfNDjAw
+----- END CREV PROOF -----
+
