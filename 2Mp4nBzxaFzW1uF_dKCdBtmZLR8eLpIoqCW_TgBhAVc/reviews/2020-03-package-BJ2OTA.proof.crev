@@ -61,3 +61,32 @@ comment: |-
 cvF1IFDv6dozPJRPe4n4AnDEUHMu2OoOcHlM03eHt8aoGfyq6Qvf2VXC6CWH4Y8QOQzxJW7swGvZzCiu09JiAg
 ----- END CREV PROOF -----
 
+----- BEGIN CREV PROOF -----
+kind: package review
+version: -1
+date: "2020-03-20T20:08:24.238386632+01:00"
+from:
+  id-type: crev
+  id: 2Mp4nBzxaFzW1uF_dKCdBtmZLR8eLpIoqCW_TgBhAVc
+  url: "https://github.com/fishi0x01/crev-proofs"
+package:
+  source: "https://crates.io"
+  name: docker_extract
+  version: 0.2.1
+  revision: 9ed6eae2cf660a363910d2cdca1f84f883c635c4
+  digest: VxS9ZATSCVV8rQLk1cD5mcWYNzg_jN8_YLKkSFoCclE
+review:
+  thoroughness: high
+  understanding: medium
+  rating: positive
+comment: |-
+  I am the maintainer of docker_extract. docker_extract is a rather simple crate which 
+  heavily relies on the safety of the tar crate dependency. 
+  
+  It looks to me like the tar crate is very conscious about security. 
+  By design, they do not allow '..' sequences in paths in order to avoid path traversals issues. 
+  I do not consider myself an expert on source code auditing, so I give this review only a medium understanding. 
+----- SIGN CREV PROOF -----
+JEI10IUYcmmUBVJQlZ0S7VMR_p1dIWvr34Y-LG9mE12yI-W5TpUc0WmC_rJOz81bpHc7rfzO3XNCZE031KSHCw
+----- END CREV PROOF -----
+
